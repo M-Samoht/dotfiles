@@ -10,18 +10,18 @@ general {
 order += "disk /"
 order += "ethernet enp4s0"
 order += "cpu_usage"
-# order += "wireless wlp4s0"
+order += "wireless wlp4s0"
 order += "volume master"
-# order += "battery 0"
+order += "battery 0"
 order += "tztime local"
 
 wireless wlp4s0 {
-    format_up = "📶 %essid:%quality"
-    format_down = "Down"
+    format_up = "Wifi: %essid:%quality"
+    format_down = "Wifi: Down"
 }
 
 volume master {
-    format = "%volume"
+    format = "Vol: %volume"
     format_muted = "muted"
     device = "default"
     mixer = "Master"
@@ -29,13 +29,13 @@ volume master {
  }
 
 disk "/" {
-   format = "%free"
+   format = "Disk: %free"
 }
 
 # if you use %speed, i3status requires the cap_net_admin capability
 ethernet enp4s0 {
-    format_up = "E: up (%speed)"
-    format_down = "E: down"
+    format_up = "Eth: up (%speed)"
+    format_down = "Eth: down"
 }
 
 tztime local {
@@ -45,14 +45,12 @@ tztime local {
 battery 0 {
     format = "%status %percentage"
     format_down = "No battery"
-    status_chr = "⚡"
-    status_bat = "🔋"
-    status_unk = "?"
-    status_full = "☻"
+    status_chr = "Charging:"
+    status_bat = "Battery:"
     path = "/sys/class/power_supply/BAT%d/uevent"
     low_threshold = 10
 }
 
 cpu_usage {
-    format = "Ω %usage"
+    format = "CPU: %usage"
 }
