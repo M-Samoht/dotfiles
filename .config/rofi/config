@@ -1,0 +1,14 @@
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! Copyright: Étienne Deparis
+! ------------------------------------------------------------------------------
+! "Color scheme for normal row" Set from: File
+rofi.color-normal:                   argb:002f343f, #f8f8f2, argb:002f343f, #141411, #f8f8f2
+! "Color scheme for urgent row" Set from: File
+rofi.color-urgent:                   argb:002f343f, #f92672, argb:002f343f, #f92672, #f8f8f2
+! "Color scheme for active row" Set from: File
+rofi.color-active:                   argb:002f343f, #a6e22a, argb:002f343f, #141411, #a6e22a
+! "Color scheme window" Set from: File
+rofi.color-window:                   argb:ee2f343f, #002b36, #CC446E
+! "Separator style (none, dash, solid)" Set from: File
+rofi.separator-style:                solid

@@ -17,6 +17,12 @@ set $inactive-bg-color   #2f343f
 set $text-color          #f3f4f5
 set $inactive-text-color #676E7D
 set $urgent-bg-color     #E53935
+set $border-color	 #CC446E
+
+#class                  border  bground text    indicator child_border
+client.focused          #991135 #285577 #FFFFFF #2E9EF4   #285577
+
+# client.focused          #ff0000 #285577 #ffffff #2e9ef4 #285577
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -44,7 +50,7 @@ bindsym $mod+d exec rofi -show run -lines 5 -eh 2 -width 100 -padding 800 -opaci
 #-------------- WINDOWS / CONTAINERS ----------------
 
 # hide window borders
-for_window [class=".*"] border pixel 0
+for_window [class=".*"] border pixel 1
 hide_edge_borders both
 
 gaps inner 25
