@@ -55,7 +55,7 @@ bindsym $mod+d exec rofi -show run -lines 5 -eh 2 -width 100 -padding 800 -opaci
 for_window [class=".*"] border pixel 1
 hide_edge_borders both
 
-gaps inner 25
+gaps inner 10
 gaps outer 0
 
 # kill focused window
@@ -213,6 +213,7 @@ exec --no-startup-id redshift >> /tmp/redshift_pid.txt
 # exec_always --no-startup-id compton --config ~/.config/compton/compton.conf
 # exec_always ~/.config/polybar/launch.sh
 exec_always --no-startup-id feh --bg-scale ~/images/city.jpg
+exec_always --no-startup-id nm-applet
 # Dependency list:
 # dmenu
 # i3lock
